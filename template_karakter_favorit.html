@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dazai</title>
+
+    <!-- Gendis: Ganti link ini dengan font unik dari Google Fonts -->
+    <link
+     rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Creepster", cursive;
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+          "sidebar header"
+          "sidebar main";
+        height: 100vh;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: black;
+        color: white;
+        display: grid;
+        justify-items: center;
+        gap: 20px;
+        padding-top: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 20px;
+        font-size: 12px;
+      }
+
+      .sidebar li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .sidebar li img {
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
+      }
+
+      .header {
+        grid-area: header;
+        background-color: #ffe2e2;
+        padding: 10px 20px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #333;
+      }
+
+      .main {
+        grid-area: main;
+        padding: 20px;
+        background-color: #fef6f6;
+      }
+
+      .main .image-grid {
+        /* GENDIS: PAKAI DISPLAY GRID YA, BIAR 4 GAMBAR BERJAJAR RAPI */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .main .image-grid img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .main p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR: GENDIS TAMBAHKAN <img> SEBAGAI ICON DI ATAS SETIAP TEKS MENU -->
+    <div class="sidebar">
+      <ul>
+        <li>
+          <img src="images/information.svg" alt="">
+          <span>Info</span>
+        </li>
+        <li>
+          <!-- GENDIS: GANTI DENGAN <img src="images/icon-skill.png"> -->
+          <span>Skill</span>
+        </li>
+        <li>
+          <!-- GENDIS: GANTI DENGAN <img src="images/icon-trivia.png"> -->
+          <span>Trivia</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- HEADER: GENDIS GANTI DENGAN NAMA KARAKTER FAVORITMU -->
+    <div class="header">
+      <h1>Dazai</h1>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <div class="main">
+      <div class="image-grid">
+        <img src="images/Dazai-four.jpg" alt="karakter 1" />
+        <img src="images/Dazai-one.jpg" alt="">
+        <img src="images/Dazai-two.jpg" alt="">
+        <img src="images/Dazai-wan.jpg" alt="">
+      </div>
+
+      <p>
+        Ini karakter asalnya dari anime Bungou Stray Dogs. Aslinya ada di real life cuma di ambil aja jadi karakter anime gegara suka bundir. Yang aku dari dia itu sifatnya yang kadang nyeleneh tapi bisa serius kalau dah waktunya walau kadang suka coba coba buat bundir dan endingnya gagal. Kadang juga kalau dah ketemu sama musuh yang se-frekuensi tingkat kewarasan otaknya bisa melebihi tingkat kewarasan manusia normal. Mantan Port Mafia yang bisa di bilang sukses di usia muda. udah menjabat jadi eksekutif, total kasus yang sudah dia lakukan juga banyak, mulai dari pembunuhan, penculikan, pemerasan dll dan semuanya di atas seratus. Cerdas tapi gak OP. Sekarang kerjanya jadi detektif, tobrut habis liat besto prendonya pergi ke alam lain. Temen sesama mafia. Yang unik dari dia...banyak sih...petama dari alasan kenapa dia suka bundir sampe tubuhnya kebalut sama perban. Keduanya otaknya dan seterusnya... Skill spesialnya netralin skill orang. Jadi kalo tangannya nyentuh serangannya orang yang punya skill. Skill-nya auto hilang. 
+      </p>
+    </div>
+  </body>
+</html>

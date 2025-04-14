@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liliput</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; 
+            height: 100vh; 
+            margin: 0; 
+            font-family: 'Creepster', cursive;
+        }
+        canvas {
+            background: green;
+            border: solid yellow 5px
+        }
+        h1  {
+            text-align: center;
+            color: blue;
+        }
+        p {
+            text-align: center;
+        }
+        h3 {
+            color: green;
+        }
+        .dadu2 {
+            text-align: center;
+        }
+        .dadu {
+            font-size: 50px;
+        }
+        img {
+            width: 50px;
+            height: 90px;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            gap: 0;
+            background-color: blanchedalmond;
+            align-items: center;
+            margin-left: 80px;
+            position: fixed;
+        }
+        .header h1 {
+        margin: 0;
+        }
+        .navbar-menu {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            list-style-type: none;
+            justify-content: right;
+            gap: 20px;
+        }
+        .sidebar-menu {
+            list-style-type: none;
+            background-color: blue;
+            width: 80px;
+            padding: 0;   
+            margin: 0;        
+        }
+        .sidebar {
+            height: 100%;
+            top: 0;
+            position: fixed;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+        
+        <div class="header">
+            <img src="images/title-image.jpg" alt="">
+            <h1>powercreep</h1>
+            <ul class="navbar-menu">
+                <li>tentang saya</li>
+                <li>tentang sukuna</li>
+                <li>tentang powercreep</li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li>
+                    <div class="menu-item">
+                        <img src="images/home.svg" alt="">
+                        home
+                    </div>   
+                </li>
+                <li>
+                    <img src="images/movie-button.svg" alt="">
+                    short
+                </li>
+                <li>
+                    <img src="images/movie.svg" alt="">
+                    subcriptions
+                </li>
+                <li>
+                    <img src="images/human.svg" alt="">
+                    you
+                </li>
+            </ul>
+         </div>
+
+    <h3 class="dadu">dadu</h3>
+    <h3 class="dadu2">dadu2</h3>
+    <p>gendishayuninglestari</p>
+     <canvas></canvas>
+   
+     
+</body>
+</html>
